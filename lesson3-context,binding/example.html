@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id='smart-button'>Smart Button</button>
+
+    <script>
+        var button = document.getElementById('smart-button');
+
+        var mouse = {
+            name: 'Jerry',
+            sayHi: function() {
+                alert('My name is ' + this.name);
+            }
+        };
+
+        button.addEventListener('click', mouse.sayHi.bind(mouse));
+    </script>
+</body>
+</html>
